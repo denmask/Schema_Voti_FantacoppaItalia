@@ -1,0 +1,629 @@
+{
+  "torneo": "Coppa Italia - Fanta Tabellino",
+  "fasi": [
+    {
+      "nome": "Quarti di Finale",
+      "partite": [
+        {
+          "casa": {
+            "nome": "Inter",
+            "giocatori": [
+              {
+                "nome": "J.Martinez",
+                "ruolo": "P",
+                "voto": 6.0,
+                "eventi": ["GS"]
+              },
+              {
+                "nome": "De Vrij",
+                "ruolo": "D",
+                "voto": 5.5,
+                "eventi": []
+              },
+              {
+                "nome": "Acerbi",
+                "ruolo": "D",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "Carlos Augusto",
+                "ruolo": "D",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Kamate",
+                "ruolo": "C",
+                "voto": 6.5,
+                "eventi": ["A", "Y"]
+              },
+              {
+                "nome": "Diouf",
+                "ruolo": "C",
+                "voto": 7,
+                "eventi": ["G"]
+              },
+              {
+                "nome": "Mkhitaryan",
+                "ruolo": "C",
+                "voto": 7.0,
+                "eventi": []
+              },
+              {
+                "nome": "Frattesi",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "Cocci",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "Thuram",
+                "ruolo": "A",
+                "voto": 6.0,
+                "eventi": ["A"]
+              },
+              {
+                "nome": "Bonny",
+                "ruolo": "A",
+                "voto": 7.0,
+                "eventi": ["G"]
+              }
+            ],
+            "panchina": [
+              { "nome": "Sucic", "ruolo": "C", "voto": 6.0, "eventi": ["Y"] },
+              { "nome": "Esposito", "ruolo": "A", "voto": 5.5, "eventi": ["Y"] }
+            ]
+          },
+          "trasferta": {
+            "nome": "Torino",
+            "giocatori": [
+              {
+                "nome": "Paleari",
+                "ruolo": "P",
+                "voto": 6.0,
+                "eventi": ["GS", "GS"]
+              },
+              {
+                "nome": "Marianucci",
+                "ruolo": "D",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Tameze",
+                "ruolo": "D",
+                "voto": 5,
+                "eventi": []
+              },
+              {
+                "nome": "Coco",
+                "ruolo": "D",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "Pedersen",
+                "ruolo": "D",
+                "voto": 5.5,
+                "eventi": []
+              },
+              {
+                "nome": "Ilkhan",
+                "ruolo": "C",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Prati",
+                "ruolo": "C",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Obrador",
+                "ruolo": "C",
+                "voto": 5,
+                "eventi": []
+              },
+              {
+                "nome": "VLasic",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "Njie",
+                "ruolo": "A",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "Kulenovic",
+                "ruolo": "A",
+                "voto": 7.0,
+                "eventi": ["G"]
+              }
+            ],
+            "panchina": [
+              { "nome": "Maripan", "ruolo": "D", "voto": 6.0, "eventi": ["Y"] }
+            ]
+          }
+        },
+        {
+          "casa": {
+            "nome": "Atalanta",
+            "giocatori": [
+              {
+                "nome": "Carnesecchi",
+                "ruolo": "P",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Scalvini",
+                "ruolo": "D",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Djmsiti",
+                "ruolo": "D",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Ahanor",
+                "ruolo": "D",
+                "voto": 7,
+                "eventi": []
+              },
+              {
+                "nome": "Bellanova",
+                "ruolo": "D",
+                "voto": 6.0,
+                "eventi": ["A"]
+              },
+              {
+                "nome": "De Roon",
+                "ruolo": "C",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Ederson",
+                "ruolo": "C",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Bernasconi",
+                "ruolo": "C",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Pasalic",
+                "ruolo": "C",
+                "voto": 7.0,
+                "eventi": ["G"]
+              },
+              {
+                "nome": "Scamacca",
+                "ruolo": "A",
+                "voto": 6.5,
+                "eventi": ["G"]
+              },
+              {
+                "nome": "Sulemana",
+                "ruolo": "A",
+                "voto": 7.0,
+                "eventi": ["G"]
+              }
+            ],
+            "panchina": [
+              { "nome": "Krstovic", "ruolo": "A", "voto": 6.0, "eventi": ["A"] }
+            ]
+          },
+          "trasferta": {
+            "nome": "Juventus",
+            "giocatori": [
+              {
+                "nome": "Perin",
+                "ruolo": "P",
+                "voto": 6.0,
+                "eventi": ["GS", "GS", "GS"]
+              },
+              {
+                "nome": "Kalulu",
+                "ruolo": "D",
+                "voto": 5.0,
+                "eventi": []
+              },
+              {
+                "nome": "Holm",
+                "ruolo": "D",
+                "voto": 5.5,
+                "eventi": []
+              },
+              {
+                "nome": "Bremer",
+                "ruolo": "D",
+                "voto": 4.5,
+                "eventi": []
+              },
+              {
+                "nome": "Kelly",
+                "ruolo": "D",
+                "voto": 5.0,
+                "eventi": []
+              },
+              {
+                "nome": "Locatelli",
+                "ruolo": "C",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Thuram",
+                "ruolo": "C",
+                "voto": 5.0,
+                "eventi": []
+              },
+              {
+                "nome": "Conceicao",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "McKennie",
+                "ruolo": "C",
+                "voto": 5.0,
+                "eventi": []
+              },
+              {
+                "nome": "Cambiaso",
+                "ruolo": "A",
+                "voto": 5.0,
+                "eventi": []
+              },
+              {
+                "nome": "Boga",
+                "ruolo": "A",
+                "voto": 6.5,
+                "eventi": []
+              }
+            ]
+          }
+        },
+        {
+          "casa": {
+            "nome": "Napoli",
+            "giocatori": [
+              {
+                "nome": "Milinkovic Savic",
+                "ruolo": "P",
+                "voto": 6.5,
+                "eventi": ["GS"]
+              },
+              {
+                "nome": "Beukema",
+                "ruolo": "D",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "Rrahmani",
+                "ruolo": "D",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "Juan Jesus",
+                "ruolo": "D",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Mazzocchi",
+                "ruolo": "D",
+                "voto": 5.0,
+                "eventi": []
+              },
+              {
+                "nome": "Lobotka",
+                "ruolo": "C",
+                "voto": 5.5,
+                "eventi": []
+              },
+              {
+                "nome": "Elmas",
+                "ruolo": "C",
+                "voto": 6.5,
+                "eventi": ["Y"]
+              },
+              {
+                "nome": "Spinazzola",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "Vergara",
+                "ruolo": "A",
+                "voto": 7.0,
+                "eventi": ["G"]
+              },
+              {
+                "nome": "Politano",
+                "ruolo": "A",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Hojlund",
+                "ruolo": "A",
+                "voto": 6.5,
+                "eventi": ["A"]
+              }
+            ],
+            "sequenza_rigori": [
+              { "nome": "Politano", "risultato": "segnato" },
+              { "nome": "Lukaku", "risultato": "Sbagliato" },
+              { "nome": "Spinazzola", "risultato": "segnato" },
+              { "nome": "Alisson Santos", "risultato": "segnato" },
+              { "nome": "Elmas", "risultato": "segnato" },
+              { "nome": "Milinkovic Savic", "risultato": "segnato" },
+              { "nome": "Gutierrez", "risultato": "segnato" },
+              { "nome": "Lobotka", "risultato": "Sbagliato" }
+            ]
+          },
+          "trasferta": {
+            "nome": "Como",
+            "giocatori": [
+              {
+                "nome": "Butez",
+                "ruolo": "P",
+                "voto": 7.0,
+                "eventi": ["GS"]
+              },
+              {
+                "nome": "Smolcic",
+                "ruolo": "D",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Diego Carlos",
+                "ruolo": "D",
+                "voto": 5.5,
+                "eventi": []
+              },
+              {
+                "nome": "Jacobo Ramon",
+                "ruolo": "D",
+                "voto": 5.5,
+                "eventi": ["Y"]
+              },
+              {
+                "nome": "Alex Valle",
+                "ruolo": "D",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Perrone",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "Nico Paz",
+                "ruolo": "C",
+                "voto": 5.0,
+                "eventi": []
+              },
+              {
+                "nome": "Da Cunha",
+                "ruolo": "C",
+                "voto": 5.5,
+                "eventi": []
+              },
+              {
+                "nome": "J. ROdriguez",
+                "ruolo": "C",
+                "voto": 5.5,
+                "eventi": []
+              },
+              {
+                "nome": "Baturina",
+                "ruolo": "A",
+                "voto": 6.5,
+                "eventi": ["G"]
+              },
+              {
+                "nome": "Douvikas",
+                "ruolo": "A",
+                "voto": 6.0,
+                "eventi": []
+              }
+            ],
+            "sequenza_rigori": [
+              { "nome": "Da Cunha", "risultato": "segnato" },
+              { "nome": "Douvikas", "risultato": "segnato" },
+              { "nome": "Baturina", "risultato": "segnato" },
+              { "nome": "Perrone", "risultato": "Sbagliato" },
+              { "nome": "Smolcic", "risultato": "segnato" },
+              { "nome": "Diego Carlos", "risultato": "segnato" },
+              { "nome": "Vojvoda", "risultato": "segnato" },
+              { "nome": "Kempf", "risultato": "segnato" }
+            ]
+          }
+        },
+        {
+          "casa": {
+            "nome": "Bologna",
+            "giocatori": [
+              {
+                "nome": "GIOCATORE 1",
+                "ruolo": "P",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 2",
+                "ruolo": "D",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 3",
+                "ruolo": "D",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 4",
+                "ruolo": "D",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 5",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 6",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 7",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 8",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 9",
+                "ruolo": "A",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 10",
+                "ruolo": "A",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 11",
+                "ruolo": "A",
+                "voto": 6.0,
+                "eventi": []
+              }
+            ]
+          },
+          "trasferta": {
+            "nome": "Lazio",
+            "giocatori": [
+              {
+                "nome": "GIOCATORE 1",
+                "ruolo": "P",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 2",
+                "ruolo": "D",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 3",
+                "ruolo": "D",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 4",
+                "ruolo": "D",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 5",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 6",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 7",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 8",
+                "ruolo": "C",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 9",
+                "ruolo": "A",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 10",
+                "ruolo": "A",
+                "voto": 6.0,
+                "eventi": []
+              },
+              {
+                "nome": "GIOCATORE 11",
+                "ruolo": "A",
+                "voto": 6.0,
+                "eventi": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Semifinali - Andata",
+      "partite": [
+        {
+          "casa": { "nome": "Inter", "giocatori": [] },
+          "trasferta": { "nome": "Como", "giocatori": [] }
+        },
+        {
+          "casa": { "nome": "Atalanta", "giocatori": [] },
+          "trasferta": { "nome": "Bologna/Lazio", "giocatori": [] }
+        }
+      ]
+    }
+  ]
+}
