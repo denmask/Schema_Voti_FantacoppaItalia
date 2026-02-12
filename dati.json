@@ -471,142 +471,156 @@
             "nome": "Bologna",
             "giocatori": [
               {
-                "nome": "GIOCATORE 1",
+                "nome": "Skorupski",
                 "ruolo": "P",
                 "voto": 6.0,
                 "eventi": []
               },
               {
-                "nome": "GIOCATORE 2",
+                "nome": "Zortea",
                 "ruolo": "D",
                 "voto": 6.0,
                 "eventi": []
               },
               {
-                "nome": "GIOCATORE 3",
+                "nome": "Vitik",
+                "ruolo": "D",
+                "voto": 5.5,
+                "eventi": ["Y"]
+              },
+              {
+                "nome": "Lucumi",
+                "ruolo": "D",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Miranda",
                 "ruolo": "D",
                 "voto": 6.0,
-                "eventi": []
+                "eventi": ["Y"]
               },
               {
-                "nome": "GIOCATORE 4",
-                "ruolo": "D",
+                "nome": "Moro",
+                "ruolo": "C",
                 "voto": 6.0,
+                "eventi": ["A"]
+              },
+              {
+                "nome": "Ferguson",
+                "ruolo": "C",
+                "voto": 4.0,
                 "eventi": []
               },
               {
-                "nome": "GIOCATORE 5",
+                "nome": "Orsolini",
+                "ruolo": "C",
+                "voto": 5.5,
+                "eventi": []
+              },
+              {
+                "nome": "Sohm",
                 "ruolo": "C",
                 "voto": 6.0,
                 "eventi": []
               },
               {
-                "nome": "GIOCATORE 6",
-                "ruolo": "C",
-                "voto": 6.0,
-                "eventi": []
-              },
-              {
-                "nome": "GIOCATORE 7",
-                "ruolo": "C",
-                "voto": 6.0,
-                "eventi": []
-              },
-              {
-                "nome": "GIOCATORE 8",
-                "ruolo": "C",
-                "voto": 6.0,
-                "eventi": []
-              },
-              {
-                "nome": "GIOCATORE 9",
+                "nome": "Cambiaghi",
                 "ruolo": "A",
                 "voto": 6.0,
                 "eventi": []
               },
               {
-                "nome": "GIOCATORE 10",
+                "nome": "Castro",
                 "ruolo": "A",
-                "voto": 6.0,
-                "eventi": []
-              },
-              {
-                "nome": "GIOCATORE 11",
-                "ruolo": "A",
-                "voto": 6.0,
-                "eventi": []
+                "voto": 7.0,
+                "eventi": ["G","Y"]
               }
+            ],
+            "sequenza_rigori": [
+              { "nome": "Ferguson", "risultato": "Sbagliato" },
+              { "nome": "Dallinga", "risultato": "segnato" },
+              { "nome": "Orsolini", "risultato": "Sbagliato" }
             ]
           },
           "trasferta": {
             "nome": "Lazio",
             "giocatori": [
               {
-                "nome": "GIOCATORE 1",
+                "nome": "Provedel",
                 "ruolo": "P",
-                "voto": 6.0,
+                "voto": 7.0,
                 "eventi": []
               },
               {
-                "nome": "GIOCATORE 2",
+                "nome": "Gila",
                 "ruolo": "D",
                 "voto": 6.0,
-                "eventi": []
+                "eventi": ["Y"]
               },
               {
-                "nome": "GIOCATORE 3",
+                "nome": "Romagnoli",
                 "ruolo": "D",
-                "voto": 6.0,
+                "voto": 6.5,
                 "eventi": []
               },
               {
-                "nome": "GIOCATORE 4",
+                "nome": "Marusic",
                 "ruolo": "D",
-                "voto": 6.0,
+                "voto": 6.5,
                 "eventi": []
               },
               {
-                "nome": "GIOCATORE 5",
+                "nome": "Pellegrini Lu.",
+                "ruolo": "C",
+                "voto": 5.5,
+                "eventi": []
+              },
+              {
+                "nome": "Dele-Bashiru",
+                "ruolo": "C",
+                "voto": 6.5,
+                "eventi": ["A"]
+              },
+              {
+                "nome": "Taylor",
+                "ruolo": "C",
+                "voto": 6.5,
+                "eventi": []
+              },
+              {
+                "nome": "Rovella",
                 "ruolo": "C",
                 "voto": 6.0,
                 "eventi": []
               },
               {
-                "nome": "GIOCATORE 6",
-                "ruolo": "C",
-                "voto": 6.0,
-                "eventi": []
-              },
-              {
-                "nome": "GIOCATORE 7",
-                "ruolo": "C",
-                "voto": 6.0,
-                "eventi": []
-              },
-              {
-                "nome": "GIOCATORE 8",
-                "ruolo": "C",
-                "voto": 6.0,
-                "eventi": []
-              },
-              {
-                "nome": "GIOCATORE 9",
+                "nome": "Isaksen",
                 "ruolo": "A",
                 "voto": 6.0,
                 "eventi": []
               },
               {
-                "nome": "GIOCATORE 10",
+                "nome": "Noslin",
                 "ruolo": "A",
-                "voto": 6.0,
-                "eventi": []
+                "voto": 7.0,
+                "eventi": ["G"]
               },
               {
-                "nome": "GIOCATORE 11",
+                "nome": "Dia",
                 "ruolo": "A",
                 "voto": 6.0,
                 "eventi": []
               }
+            ],
+            "panchina": [
+              { "nome": "Nuno Tavares", "ruolo": "D", "voto": 6.0, "eventi": ["Y"] }
+            ],
+            "sequenza_rigori": [
+              { "nome": "Nuno Tavares", "risultato": "segnato" },
+              { "nome": "Dia", "risultato": "segnato" },
+              { "nome": "Marusic", "risultato": "segnato" },
+              { "nome": "Taylor", "risultato": "segnato" }
             ]
           }
         }
@@ -621,7 +635,7 @@
         },
         {
           "casa": { "nome": "Atalanta", "giocatori": [] },
-          "trasferta": { "nome": "Bologna/Lazio", "giocatori": [] }
+          "trasferta": { "nome": "Lazio", "giocatori": [] }
         }
       ]
     }
