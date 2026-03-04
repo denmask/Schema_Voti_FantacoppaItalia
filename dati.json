@@ -224,8 +224,38 @@
           }
         },
         {
-          "casa": { "nome": "Atalanta", "giocatori": [] },
-          "trasferta": { "nome": "Lazio", "giocatori": [] }
+          "casa": {
+            "nome": "Lazio",
+            "giocatori": [
+              { "nome": "Provedel", "ruolo": "P", "voto": 0, "eventi": [] },
+              { "nome": "Marusic", "ruolo": "D", "voto": 0, "eventi": [] },
+              { "nome": "Provstgaard", "ruolo": "D", "voto": 0, "eventi": [] },
+              { "nome": "Romagnoli", "ruolo": "D", "voto": 0, "eventi": [] },
+              { "nome": "Nuno Tavares", "ruolo": "D", "voto": 0, "eventi": [] },
+              { "nome": "Belahyane", "ruolo": "C", "voto": 0, "eventi": [] },
+              { "nome": "Cataldi", "ruolo": "C", "voto": 0, "eventi": [] },
+              { "nome": "Taylor", "ruolo": "C", "voto": 0, "eventi": [] },
+              { "nome": "Isaksen", "ruolo": "A", "voto": 0, "eventi": [] },
+              { "nome": "Dia", "ruolo": "A", "voto": 0, "eventi": [] },
+              { "nome": "Zaccagni", "ruolo": "A", "voto": 0, "eventi": [] }
+            ]
+          },
+          "trasferta": {
+            "nome": "Atalanta",
+            "giocatori": [
+              { "nome": "Carnesecchi", "ruolo": "P", "voto": 0, "eventi": [] },
+              { "nome": "Scalvini", "ruolo": "D", "voto": 0, "eventi": [] },
+              { "nome": "Djimsiti", "ruolo": "D", "voto": 0, "eventi": [] },
+              { "nome": "Kolasinac", "ruolo": "D", "voto": 0, "eventi": [] },
+              { "nome": "Zappacosta", "ruolo": "C", "voto": 0, "eventi": [] },
+              { "nome": "Ederson", "ruolo": "C", "voto": 0, "eventi": [] },
+              { "nome": "De Roon", "ruolo": "C", "voto": 0, "eventi": [] },
+              { "nome": "Zalewski", "ruolo": "C", "voto": 0, "eventi": [] },
+              { "nome": "Sulemana", "ruolo": "C", "voto": 0, "eventi": [] },
+              { "nome": "Pasalic", "ruolo": "C", "voto": 0, "eventi": [] },
+              { "nome": "Scamacca", "ruolo": "A", "voto": 0, "eventi": [] }
+            ]
+          }
         }
       ]
     }
