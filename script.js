@@ -1,4 +1,4 @@
-const BONUS_MAP = { "G": 3, "A": 1, "Y": -0.5, "R": -1, "GS": -1 };
+const BONUS_MAP = { "G": 3, "A": 1, "Y": -0.5, "R": -1, "GS": -1, "MG": -2 };
 
 async function initApp() {
     try {

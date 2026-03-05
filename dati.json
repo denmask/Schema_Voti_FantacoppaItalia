@@ -13,7 +13,7 @@
               { "nome": "Acerbi", "ruolo": "D", "voto": 6.0, "eventi": [] },
               { "nome": "Carlos Augusto", "ruolo": "D", "voto": 6.5, "eventi": [] },
               { "nome": "Kamate", "ruolo": "C", "voto": 6.5, "eventi": ["A", "Y"] },
-              { "nome": "Diouf", "ruolo": "C", "voto": 7, "eventi": ["G"] },
+              { "nome": "Diouf", "ruolo": "C", "voto": 7.0, "eventi": ["G"] },
               { "nome": "Mkhitaryan", "ruolo": "C", "voto": 7.0, "eventi": [] },
               { "nome": "Frattesi", "ruolo": "C", "voto": 6.0, "eventi": [] },
               { "nome": "Cocci", "ruolo": "C", "voto": 6.0, "eventi": [] },
@@ -30,13 +30,13 @@
             "giocatori": [
               { "nome": "Paleari", "ruolo": "P", "voto": 6.0, "eventi": ["GS", "GS"] },
               { "nome": "Marianucci", "ruolo": "D", "voto": 6.5, "eventi": [] },
-              { "nome": "Tameze", "ruolo": "D", "voto": 5, "eventi": [] },
+              { "nome": "Tameze", "ruolo": "D", "voto": 5.0, "eventi": [] },
               { "nome": "Coco", "ruolo": "D", "voto": 6.0, "eventi": [] },
               { "nome": "Pedersen", "ruolo": "D", "voto": 5.5, "eventi": [] },
               { "nome": "Ilkhan", "ruolo": "C", "voto": 6.5, "eventi": [] },
               { "nome": "Prati", "ruolo": "C", "voto": 6.5, "eventi": [] },
-              { "nome": "Obrador", "ruolo": "C", "voto": 5, "eventi": [] },
-              { "nome": "VLasic", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Obrador", "ruolo": "C", "voto": 5.0, "eventi": [] },
+              { "nome": "Vlasic", "ruolo": "C", "voto": 6.0, "eventi": [] },
               { "nome": "Njie", "ruolo": "A", "voto": 6.0, "eventi": [] },
               { "nome": "Kulenovic", "ruolo": "A", "voto": 7.0, "eventi": ["G"] }
             ],
@@ -51,8 +51,8 @@
             "giocatori": [
               { "nome": "Carnesecchi", "ruolo": "P", "voto": 6.5, "eventi": [] },
               { "nome": "Scalvini", "ruolo": "D", "voto": 6.5, "eventi": [] },
-              { "nome": "Djmsiti", "ruolo": "D", "voto": 6.5, "eventi": [] },
-              { "nome": "Ahanor", "ruolo": "D", "voto": 7, "eventi": [] },
+              { "nome": "Djimsiti", "ruolo": "D", "voto": 6.5, "eventi": [] },
+              { "nome": "Ahanor", "ruolo": "D", "voto": 7.0, "eventi": [] },
               { "nome": "Bellanova", "ruolo": "D", "voto": 6.0, "eventi": ["A"] },
               { "nome": "De Roon", "ruolo": "C", "voto": 6.5, "eventi": [] },
               { "nome": "Ederson", "ruolo": "C", "voto": 6.5, "eventi": [] },
@@ -100,13 +100,13 @@
             ],
             "sequenza_rigori": [
               { "nome": "Politano", "risultato": "segnato" },
-              { "nome": "Lukaku", "risultato": "Sbagliato" },
+              { "nome": "Lukaku", "risultato": "sbagliato" },
               { "nome": "Spinazzola", "risultato": "segnato" },
               { "nome": "Alisson Santos", "risultato": "segnato" },
               { "nome": "Elmas", "risultato": "segnato" },
               { "nome": "Milinkovic Savic", "risultato": "segnato" },
               { "nome": "Gutierrez", "risultato": "segnato" },
-              { "nome": "Lobotka", "risultato": "Sbagliato" }
+              { "nome": "Lobotka", "risultato": "sbagliato" }
             ]
           },
           "trasferta": {
@@ -120,7 +120,7 @@
               { "nome": "Perrone", "ruolo": "C", "voto": 6.0, "eventi": [] },
               { "nome": "Nico Paz", "ruolo": "C", "voto": 5.0, "eventi": [] },
               { "nome": "Da Cunha", "ruolo": "C", "voto": 5.5, "eventi": [] },
-              { "nome": "J. ROdriguez", "ruolo": "C", "voto": 5.5, "eventi": [] },
+              { "nome": "J. Rodriguez", "ruolo": "C", "voto": 5.5, "eventi": [] },
               { "nome": "Baturina", "ruolo": "A", "voto": 6.5, "eventi": ["G"] },
               { "nome": "Douvikas", "ruolo": "A", "voto": 6.0, "eventi": [] }
             ],
@@ -128,7 +128,7 @@
               { "nome": "Da Cunha", "risultato": "segnato" },
               { "nome": "Douvikas", "risultato": "segnato" },
               { "nome": "Baturina", "risultato": "segnato" },
-              { "nome": "Perrone", "risultato": "Sbagliato" },
+              { "nome": "Perrone", "risultato": "sbagliato" },
               { "nome": "Smolcic", "risultato": "segnato" },
               { "nome": "Diego Carlos", "risultato": "segnato" },
               { "nome": "Vojvoda", "risultato": "segnato" },
@@ -153,9 +153,9 @@
               { "nome": "Castro", "ruolo": "A", "voto": 7.0, "eventi": ["G", "Y"] }
             ],
             "sequenza_rigori": [
-              { "nome": "Ferguson", "risultato": "Sbagliato" },
+              { "nome": "Ferguson", "risultato": "sbagliato" },
               { "nome": "Dallinga", "risultato": "segnato" },
-              { "nome": "Orsolini", "risultato": "Sbagliato" }
+              { "nome": "Orsolini", "risultato": "sbagliato" }
             ]
           },
           "trasferta": {
@@ -227,33 +227,36 @@
           "casa": {
             "nome": "Lazio",
             "giocatori": [
-              { "nome": "Provedel", "ruolo": "P", "voto": 0, "eventi": [] },
-              { "nome": "Marusic", "ruolo": "D", "voto": 0, "eventi": [] },
-              { "nome": "Provstgaard", "ruolo": "D", "voto": 0, "eventi": [] },
-              { "nome": "Romagnoli", "ruolo": "D", "voto": 0, "eventi": [] },
-              { "nome": "Nuno Tavares", "ruolo": "D", "voto": 0, "eventi": [] },
-              { "nome": "Belahyane", "ruolo": "C", "voto": 0, "eventi": [] },
-              { "nome": "Cataldi", "ruolo": "C", "voto": 0, "eventi": [] },
-              { "nome": "Taylor", "ruolo": "C", "voto": 0, "eventi": [] },
-              { "nome": "Isaksen", "ruolo": "A", "voto": 0, "eventi": [] },
-              { "nome": "Dia", "ruolo": "A", "voto": 0, "eventi": [] },
-              { "nome": "Zaccagni", "ruolo": "A", "voto": 0, "eventi": [] }
+              { "nome": "Provedel", "ruolo": "P", "voto": 6.0, "eventi": ["GS", "GS"] },
+              { "nome": "Marusic", "ruolo": "D", "voto": 5.5, "eventi": [] },
+              { "nome": "Gila", "ruolo": "D", "voto": 6.5, "eventi": [] },
+              { "nome": "Romagnoli", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Nuno Tavares", "ruolo": "D", "voto": 5.0, "eventi": [] },
+              { "nome": "Dele-Bashiru", "ruolo": "C", "voto": 7.5, "eventi": ["G"] },
+              { "nome": "Cataldi", "ruolo": "C", "voto": 6.5, "eventi": [] },
+              { "nome": "Taylor", "ruolo": "C", "voto": 5.5, "eventi": [] },
+              { "nome": "Cancellieri", "ruolo": "A", "voto": 6.0, "eventi": [] },
+              { "nome": "Dia", "ruolo": "A", "voto": 7.0, "eventi": ["G"] },
+              { "nome": "Maldini", "ruolo": "A", "voto": 6.0, "eventi": ["A"] }
             ]
           },
           "trasferta": {
             "nome": "Atalanta",
             "giocatori": [
-              { "nome": "Carnesecchi", "ruolo": "P", "voto": 0, "eventi": [] },
-              { "nome": "Scalvini", "ruolo": "D", "voto": 0, "eventi": [] },
-              { "nome": "Djimsiti", "ruolo": "D", "voto": 0, "eventi": [] },
-              { "nome": "Kolasinac", "ruolo": "D", "voto": 0, "eventi": [] },
-              { "nome": "Zappacosta", "ruolo": "C", "voto": 0, "eventi": [] },
-              { "nome": "Ederson", "ruolo": "C", "voto": 0, "eventi": [] },
-              { "nome": "De Roon", "ruolo": "C", "voto": 0, "eventi": [] },
-              { "nome": "Zalewski", "ruolo": "C", "voto": 0, "eventi": [] },
-              { "nome": "Sulemana", "ruolo": "C", "voto": 0, "eventi": [] },
-              { "nome": "Pasalic", "ruolo": "C", "voto": 0, "eventi": [] },
-              { "nome": "Scamacca", "ruolo": "A", "voto": 0, "eventi": [] }
+              { "nome": "Carnesecchi", "ruolo": "P", "voto": 6.5, "eventi": ["GS", "GS"] },
+              { "nome": "Scalvini", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Hien", "ruolo": "D", "voto": 6.5, "eventi": ["Y"] },
+              { "nome": "Ahanor", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Zappacosta", "ruolo": "C", "voto": 7.0, "eventi": [] },
+              { "nome": "Musah", "ruolo": "C", "voto": 7.0, "eventi": ["G"] },
+              { "nome": "Pasalic", "ruolo": "C", "voto": 7.0, "eventi": ["G", "Y", "MG"] },
+              { "nome": "Bernasconi", "ruolo": "C", "voto": 6.5, "eventi": [] },
+              { "nome": "Sulemana", "ruolo": "C", "voto": 6.5, "eventi": ["A"] },
+              { "nome": "Zalewski", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Krstovic", "ruolo": "A", "voto": 5.5, "eventi": [] }
+            ],
+            "panchina": [
+              { "nome": "De Roon", "ruolo": "C", "voto": 6.0, "eventi": ["Y"] }
             ]
           }
         }
