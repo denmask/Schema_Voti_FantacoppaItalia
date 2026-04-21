@@ -8,7 +8,7 @@
           "casa": {
             "nome": "Inter",
             "giocatori": [
-              { "nome": "J.Martinez", "ruolo": "P", "voto": 6.0, "eventi": ["GS"] },
+              { "nome": "J. Martinez", "ruolo": "P", "voto": 6.0, "eventi": ["GS"] },
               { "nome": "De Vrij", "ruolo": "D", "voto": 5.5, "eventi": [] },
               { "nome": "Acerbi", "ruolo": "D", "voto": 6.0, "eventi": [] },
               { "nome": "Carlos Augusto", "ruolo": "D", "voto": 6.5, "eventi": [] },
@@ -86,7 +86,7 @@
           "casa": {
             "nome": "Napoli",
             "giocatori": [
-              { "nome": "Milinkovic Savic", "ruolo": "P", "voto": 6.5, "eventi": ["GS"] },
+              { "nome": "Milinkovic-Savic", "ruolo": "P", "voto": 6.5, "eventi": ["GS"] },
               { "nome": "Beukema", "ruolo": "D", "voto": 6.0, "eventi": [] },
               { "nome": "Rrahmani", "ruolo": "D", "voto": 6.0, "eventi": [] },
               { "nome": "Juan Jesus", "ruolo": "D", "voto": 6.5, "eventi": [] },
@@ -104,7 +104,7 @@
               { "nome": "Spinazzola", "risultato": "segnato" },
               { "nome": "Alisson Santos", "risultato": "segnato" },
               { "nome": "Elmas", "risultato": "segnato" },
-              { "nome": "Milinkovic Savic", "risultato": "segnato" },
+              { "nome": "Milinkovic-Savic", "risultato": "segnato" },
               { "nome": "Gutierrez", "risultato": "segnato" },
               { "nome": "Lobotka", "risultato": "sbagliato" }
             ]
@@ -257,6 +257,45 @@
             ],
             "panchina": [
               { "nome": "De Roon", "ruolo": "C", "voto": 6.0, "eventi": ["Y"] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Semifinali - Ritorno",
+      "partite": [
+        {
+          "casa": {
+            "nome": "Inter",
+            "giocatori": [
+              { "nome": "Martinez", "ruolo": "P", "voto": 6.0, "eventi": [] },
+              { "nome": "Akanji", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Acerbi", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Carlos Augusto", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Dumfries", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Barella", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Calhanoglu", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Zielinski", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Dimarco", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Thuram", "ruolo": "A", "voto": 6.0, "eventi": [] },
+              { "nome": "Bonny", "ruolo": "A", "voto": 6.0, "eventi": [] }
+            ]
+          },
+          "trasferta": {
+            "nome": "Como",
+            "giocatori": [
+              { "nome": "Butez", "ruolo": "P", "voto": 6.0, "eventi": [] },
+              { "nome": "Kempf", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Alex Valle", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Ramon", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Van Der Brempt", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Da Cunha", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Perrone", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Nico Paz", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Assane Diao", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Baturina", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Douvikas", "ruolo": "A", "voto": 6.0, "eventi": [] }
             ]
           }
         }
