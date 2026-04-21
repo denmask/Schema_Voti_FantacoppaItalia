@@ -298,6 +298,40 @@
               { "nome": "Douvikas", "ruolo": "A", "voto": 6.0, "eventi": [] }
             ]
           }
+        },
+        {
+          "casa": {
+            "nome": "Atalanta",
+            "giocatori": [
+              { "nome": "Carnesecchi", "ruolo": "P", "voto": 6.0, "eventi": [] },
+              { "nome": "Scalvini", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Djimsiti", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Kolasinac", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Zappacosta", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Ederson", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "De Roon", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Bernasconi", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "De Ketelaere", "ruolo": "A", "voto": 6.0, "eventi": [] },
+              { "nome": "Zalewski", "ruolo": "A", "voto": 6.0, "eventi": [] },
+              { "nome": "Krstovic", "ruolo": "A", "voto": 6.0, "eventi": [] }
+            ]
+          },
+          "trasferta": {
+            "nome": "Lazio",
+            "giocatori": [
+              { "nome": "Motta", "ruolo": "P", "voto": 6.0, "eventi": [] },
+              { "nome": "Lazzari", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Gila", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Romagnoli", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Nuno Tavares", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Dele-Bashiru", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Cataldi", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Taylor", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Isaksen", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Maldini", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Zaccagni", "ruolo": "A", "voto": 6.0, "eventi": [] }
+            ]
+          }
         }
       ]
     }
