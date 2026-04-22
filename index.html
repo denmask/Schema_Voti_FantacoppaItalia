@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabellino Coppa Italia</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coppa Italia · Fanta Tabellino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🏆 Tabellino Coppa Italia</h1>
-        </header>
-        <div id="bracket-container"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <div class="brand-text">
+          <span class="brand-eyebrow">Fanta Tabellino</span>
+          <span class="brand-title">COPPA ITALIA</span>
+          <span class="brand-eyebrow">Stagione 25/26</span>
+        </div>
+      </div>
     </div>
-    <script src="script.js"></script>
+  </header>
+
+  <nav class="filter-nav" aria-label="Filtra per fase">
+    <div class="filter-nav-inner">
+      <div class="filter-scroll" id="filter-scroll"></div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div id="bracket-container"></div>
+    <div id="empty-state" class="empty-state" style="display:none">
+      <div class="empty-icon">🇮🇹</div>
+      <p>Nessuna partita disponibile per questa fase.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

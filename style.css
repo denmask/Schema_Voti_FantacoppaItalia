@@ -1,163 +1,589 @@
+/* ============================================================
+   COPPA ITALIA · FANTA TABELLINO
+   Design: Italian Tricolore Header + Azzurro Text
+   ============================================================ */
+
+/* --- TOKENS --- */
 :root {
-  --bg-color: #f0f2f5;
-  --navy: #1a1a40;
-  --accent: #4a4ae2;
-  --p-color: #fbc02d; /* Portiere */
-  --d-color: #4caf50; /* Difensore */
-  --c-color: #03a9f4; /* Centrocampista */
-  --a-color: #f44336; /* Attaccante */
+  --azzurro:    #0B3B6E;
+  --azzurro-dark: #062349;
+  --azzurro-light: #1A5B9E;
+  --azzurro-flag: #0055A4;
+  --italia-green:  #009246;
+  --italia-white:  #F1F2F1;
+  --italia-red:    #CE2B37;
+  
+  --bg:         #0a0c12;
+  --surface:    rgba(11, 59, 110, 0.15);
+  --surface-2:  rgba(11, 59, 110, 0.25);
+  --surface-3:  rgba(11, 59, 110, 0.35);
+  --glass:      rgba(255,255,255,0.05);
+  --border:     rgba(255,255,255,0.08);
+  --border-hi:  rgba(255,255,255,0.15);
+
+  --gold:       #f0b42a;
+  --green-bonus: #1db954;
+  --blue:       #3d8bf7;
+  --yellow:     #f5c518;
+  --purple:     #9747ff;
+  --grey-ev:    #64748b;
+
+  --role-p:     #f59e0b;
+  --role-d:     #22c55e;
+  --role-c:     #3d8bf7;
+  --role-a:     #CE2B37;
+
+  --text-hi:    #f2f4fc;
+  --text-md:    #a8b4d0;
+  --text-lo:    #5a6680;
+
+  --font-cond:  'Barlow Condensed', sans-serif;
+  --font-body:  'Barlow', sans-serif;
+
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 16px;
+  --r-xl: 20px;
 }
 
+/* --- RESET --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+/* Italian Jersey Pattern Background */
 body {
-  background-color: var(--bg-color);
-  font-family: "Inter", sans-serif;
-  margin: 0;
-  padding: 20px;
+  background: linear-gradient(135deg, var(--azzurro-dark) 0%, var(--azzurro) 100%);
+  font-family: var(--font-body);
+  color: var(--text-hi);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Scacchiera tipo maglia della nazionale */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(45deg, 
+      rgba(255,255,255,0.03) 0px, 
+      rgba(255,255,255,0.03) 2px,
+      transparent 2px, 
+      transparent 8px),
+    repeating-linear-gradient(135deg, 
+      rgba(255,255,255,0.02) 0px, 
+      rgba(255,255,255,0.02) 2px,
+      transparent 2px, 
+      transparent 8px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.3) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.main-content, .filter-nav, .site-header {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   HEADER - TRICOLORE BACKGROUND + AZZURRO TEXT
+   ============================================================ */
+.site-header {
+  background: linear-gradient(90deg, 
+    var(--italia-green) 0%, 
+    var(--italia-green) 33.33%,
+    var(--italia-white) 33.33%, 
+    var(--italia-white) 66.66%,
+    var(--italia-red) 66.66%, 
+    var(--italia-red) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 80px;
   display: flex;
-  justify-content: center;
-}
-
-.main-wrapper {
-  width: 100%;
-  max-width: 900px;
-}
-
-.main-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.main-header h1 {
-  margin: 10px 0 5px;
-  font-weight: 800;
-  color: var(--navy);
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-
-/* CARD PARTITA */
-.fase-header {
-  background: var(--navy);
-  color: white;
-  padding: 12px 20px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  border-radius: 12px 12px 0 0;
-  letter-spacing: 1px;
-}
-
-.tabellino-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  margin-bottom: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.score-banner {
-  display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 25px 40px;
-  background: linear-gradient(to bottom, #ffffff, #fdfdfd);
-  border-bottom: 1px solid #eee;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(4px);
 }
 
-.team-block {
-  text-align: center;
-  width: 30%;
-}
-
-.team-block h2 {
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: #2d3436;
-}
-
-.pts-badge {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #636e72;
-  background: #f1f2f6;
-  padding: 2px 10px;
-  border-radius: 20px;
-  margin-top: 5px;
-  display: inline-block;
-}
-
-.score-center {
-  background: var(--navy);
-  color: white;
-  padding: 10px 25px;
-  border-radius: 15px;
-  font-size: 2.2rem;
-  font-weight: 900;
-  box-shadow: 0 4px 10px rgba(26, 26, 64, 0.3);
-}
-
-/* GRIGLIA GIOCATORI */
-.players-grid {
-  display: flex;
-  background: white;
-}
-
-.team-column {
-  flex: 1;
-  padding: 15px;
-}
-
-.team-column:first-child {
-  border-right: 1px solid #f0f0f0;
-}
-
-.player-row {
+.header-brand {
   display: flex;
   align-items: center;
-  padding: 8px 10px;
-  border-radius: 8px;
-  margin-bottom: 2px;
-  transition: background 0.2s;
+  gap: 12px;
 }
 
-.player-row:hover {
-  background: #f8f9ff;
-}
-
-.role-badge {
-  width: 22px;
-  height: 22px;
+.brand-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,0.15);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.brand-icon svg path {
+  fill: #fff;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.brand-eyebrow {
+  font-family: var(--font-body);
   font-size: 0.65rem;
-  font-weight: 800;
-  color: white;
-  margin-right: 12px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--azzurro-flag);
+  line-height: 1;
+  text-shadow: 0 0 2px rgba(255,255,255,0.5);
+}
+
+.brand-title {
+  font-family: var(--font-cond);
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--azzurro-flag);
+  text-shadow: 0 0 2px rgba(255,255,255,0.5);
+  line-height: 1.1;
+}
+
+.header-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--azzurro-flag);
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 5px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   FILTER NAV
+   ============================================================ */
+.filter-nav {
+  background: rgba(6, 35, 73, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: sticky;
+  top: 80px;
+  z-index: 90;
+}
+
+.filter-nav-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.filter-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.filter-scroll::-webkit-scrollbar { display: none; }
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  padding: 8px 20px;
+  border-radius: 40px;
+  font-family: var(--font-cond);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(0,0,0,0.3);
+  color: var(--text-md);
+  transition: all 0.2s ease;
+  user-select: none;
   flex-shrink: 0;
 }
 
-.P {
-  background: var(--p-color);
-}
-.D {
-  background: var(--d-color);
-}
-.C {
-  background: var(--c-color);
-}
-.A {
-  background: var(--a-color);
+.filter-pill:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-1px);
 }
 
-.player-name {
-  flex-grow: 1;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #2d3436;
+.filter-pill.active {
+  background: linear-gradient(135deg, var(--italia-green), var(--italia-red));
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0,146,70,0.4);
+}
+
+.filter-pill.all-pill.active {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.3);
+  color: #fff;
+  box-shadow: none;
+}
+
+.pill-flag {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.pill-count {
+  font-size: 0.65rem;
+  font-weight: 700;
+  background: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  padding: 2px 8px;
+  letter-spacing: 0;
+}
+
+.filter-pill.active .pill-count {
+  background: rgba(0,0,0,0.3);
+}
+
+/* ============================================================
+   MAIN LAYOUT
+   ============================================================ */
+.main-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 16px 72px;
+}
+
+/* ============================================================
+   EMPTY STATE
+   ============================================================ */
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  border-radius: var(--r-xl);
+  color: var(--text-md);
+}
+
+.empty-icon { font-size: 3rem; margin-bottom: 16px; opacity: 0.6; }
+.empty-state p { font-size: 1rem; }
+
+/* ============================================================
+   FASE HEADER
+   ============================================================ */
+.fase-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 36px 0 20px;
+}
+
+.fase-header-bar {
+  width: 4px;
+  height: 28px;
+  background: linear-gradient(180deg, var(--italia-green), var(--italia-white), var(--italia-red));
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.fase-header-text {
+  font-family: var(--font-cond);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  background: linear-gradient(135deg, var(--italia-green), var(--italia-white), var(--italia-red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.fase-header-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, rgba(255,255,255,0.2), transparent);
+}
+
+/* ============================================================
+   MATCH CARD
+   ============================================================ */
+.tabellino-card {
+  background: rgba(11, 59, 110, 0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r-xl);
+  margin-bottom: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  animation: cardIn 0.4s ease both;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tabellino-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+  border-color: rgba(255,255,255,0.2);
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   SCORE BANNER
+   ============================================================ */
+.score-banner {
+  display: grid;
+  grid-template-columns: 1fr 120px 1fr;
+  align-items: center;
+  gap: 0;
+  padding: 24px 28px;
+  background: rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: relative;
+}
+
+.score-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--italia-green), var(--italia-white), var(--italia-red));
+}
+
+.team-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.team-block.away {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.team-name {
+  font-family: var(--font-cond);
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  line-height: 1;
+}
+
+.pts-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-cond);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-md);
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.pts-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 4px var(--gold);
+}
+
+.score-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.main-goals {
+  font-family: var(--font-cond);
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  background: linear-gradient(135deg, var(--italia-green), var(--italia-white), var(--italia-red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1;
+  position: relative;
+}
+
+.main-goals::before {
+  content: '';
+  position: absolute;
+  inset: -8px -16px;
+  background: rgba(0,0,0,0.2);
+  border-radius: var(--r-md);
+  z-index: -1;
+}
+
+.penalty-score-banner {
+  font-family: var(--font-cond);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--italia-red);
+  line-height: 1;
+}
+
+.dcr-label {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-lo);
+  margin-top: 2px;
+}
+
+/* ============================================================
+   PLAYERS GRID
+   ============================================================ */
+.players-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.team-column {
+  padding: 16px 14px 20px;
+}
+
+.team-column:first-child {
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+.section-label {
+  font-family: var(--font-cond);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-md);
+  padding: 8px 6px 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 6px;
+}
+
+.penalty-label {
+  color: var(--italia-red) !important;
+  border-color: rgba(206,43,55,0.3) !important;
+  margin-top: 16px;
+}
+
+.empty-bench {
+  padding: 12px 8px;
+  text-align: center;
+  color: var(--text-lo);
+  font-size: 0.7rem;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================================
+   PLAYER ROW - senza icona, voto inline con calcolo sotto
+   ============================================================ */
+.player-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px;
+  border-radius: var(--r-sm);
+  transition: background 0.15s ease;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.player-row:hover { background: rgba(255,255,255,0.05); }
+
+.player-row.bench { opacity: 0.7; }
+
+/* Left side: ruolo + nome + bonus icons */
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.role-badge {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-cond);
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+  letter-spacing: 0;
+}
+
+.P { background: var(--role-p); box-shadow: 0 0 4px rgba(245,158,11,0.5); }
+.D { background: var(--role-d); box-shadow: 0 0 4px rgba(34,197,94,0.5); }
+.C { background: var(--role-c); box-shadow: 0 0 4px rgba(61,139,247,0.5); }
+.A { background: var(--role-a); box-shadow: 0 0 4px rgba(206,43,55,0.5); }
+
+.player-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -165,289 +591,170 @@ body {
 
 .bonus-icons {
   display: flex;
-  gap: 4px;
-  margin: 0 10px;
+  gap: 3px;
+  flex-shrink: 0;
 }
 
 .icon {
   width: 14px;
   height: 14px;
   border-radius: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.icon-G {
-  background: #4caf50;
-} /* Gol */
-.icon-A {
-  background: #2196f3;
-} /* Assist */
-.icon-Y {
-  background: #ffeb3b;
-} /* Giallo */
-.icon-R {
-  background: #f44336;
-} /* Rosso */
-.icon-GS {
-  background: #2d3436;
-} /* Gol Subito */
+.icon-G  { background: var(--green-bonus); box-shadow: 0 0 6px rgba(29,185,84,0.6); }
+.icon-A  { background: var(--blue); box-shadow: 0 0 4px rgba(61,139,247,0.4); }
+.icon-Y  { background: var(--yellow); }
+.icon-R  { background: var(--italia-red); }
+.icon-GS { background: var(--grey-ev); }
+.icon-MG { background: var(--purple); }
 
+/* Right side: voto finale */
 .final-voto {
+  font-family: var(--font-cond);
+  font-size: 1rem;
   font-weight: 800;
-  font-size: 0.95rem;
-  color: var(--navy);
-  width: 35px;
-  text-align: right;
+  color: #fff;
+  background: linear-gradient(135deg, var(--azzurro), var(--azzurro-dark));
+  padding: 2px 10px;
+  border-radius: 20px;
+  min-width: 45px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255,255,255,0.2);
+  flex-shrink: 0;
 }
 
-/* ... (mantieni il CSS precedente e aggiungi/modifica questi) ... */
-
-.section-label {
-  font-size: 0.65rem;
-  font-weight: 800;
-  color: #999;
-  text-transform: uppercase;
-  padding: 10px 10px 5px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-
-.voto-container {
+/* Calcolo voto sotto - allineato a destra sotto il voto */
+.voto-calcolo {
+  width: 100%;
+  margin-top: 4px;
+  padding: 4px 0 4px 28px;
+  font-size: 0.6rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
-  width: 80px;
-  justify-content: flex-end;
+  gap: 4px;
+  border-left: 2px solid var(--gold);
 }
 
-.voto-base {
-  font-size: 0.75rem;
-  color: #888;
-  background: #f0f0f0;
-  padding: 2px 5px;
-  border-radius: 4px;
+.calc-base {
+  color: var(--text-md);
+  font-weight: 500;
 }
 
-.final-voto {
+.calc-bonus-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 1px 5px;
+  border-radius: 12px;
+  font-size: 0.55rem;
+  font-weight: 600;
+}
+
+.calc-bonus-positive {
+  background: rgba(29,185,84,0.2);
+  color: var(--green-bonus);
+}
+
+.calc-bonus-negative {
+  background: rgba(206,43,55,0.2);
+  color: var(--italia-red);
+}
+
+.calc-symbol {
+  font-size: 0.65rem;
+}
+
+.calc-total {
+  color: var(--gold);
   font-weight: 800;
-  font-size: 0.95rem;
-  color: var(--navy);
-  min-width: 30px;
-  text-align: right;
+  margin-left: 2px;
 }
 
-.panchina-area {
-  background: #fafafa;
-  border-top: 1px dashed #ddd;
+.calc-arrow {
+  color: var(--text-lo);
+  margin: 0 2px;
 }
 
-.player-row.bench {
-  opacity: 0.8;
-  padding: 5px 10px;
-}
-
-.player-row.bench .player-name {
-  font-size: 0.8rem;
-  color: #666;
-}
-
-/* Label specifica per i rigoristi */
-.penalty-label {
-  background: #e74c3c !important; /* Un rosso sportivo */
-  color: white;
-  margin-top: 15px;
-}
+/* ============================================================
+   PENALTY SECTION
+   ============================================================ */
+.rigori-wrapper { margin-top: 8px; }
 
 .penalty-row {
-  padding: 5px 10px;
-  border-bottom: 1px solid #eee;
   display: flex;
-  justify-content: space-between;
-  font-size: 0.9em;
-}
-
-.rig-ok {
-  color: #27ae60;
-  font-weight: bold;
-}
-.rig-miss {
-  color: #c0392b;
-  font-weight: bold;
-}
-
-.penalty-score {
-  font-size: 0.8em;
-  font-weight: bold;
-  color: #555;
-  text-transform: uppercase;
-}
-
-/* Modifica il contenitore centrale per ospitare bene entrambi */
-.score-center {
-  background: var(--navy);
-  color: white;
-  padding: 8px 30px; /* Ridotto leggermente il padding verticale */
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(26, 26, 64, 0.3);
-  min-width: 120px;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border-radius: var(--r-sm);
+  gap: 6px;
+  transition: background 0.12s;
 }
 
-/* Il risultato principale (es. 1 - 1) */
-.main-goals {
-  font-size: 2.2rem;
-  font-weight: 900;
-  line-height: 1;
+.penalty-row:hover { background: rgba(255,255,255,0.03); }
+
+.penalty-row .player-name {
+  font-size: 0.74rem;
+  color: var(--text-md);
 }
 
-/* Il punteggio dei rigori sotto (es. (4) - (5)) */
-.penalty-score-banner {
-  font-size: 1.1rem; /* Circa la metà del risultato principale */
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.9); /* Bianco quasi puro */
-  margin-top: 5px;
-  letter-spacing: 2px;
-}
+.rig-ok   { font-size: 0.7rem; font-weight: 700; color: var(--green-bonus); white-space: nowrap; }
+.rig-miss { font-size: 0.7rem; font-weight: 700; color: var(--italia-red); white-space: nowrap; }
 
-/* Utility per nascondere i box rigori laterali se vuoi pulizia */
-.rigori-wrapper {
-  margin-top: 15px;
-  border-top: 2px solid #eee;
-}
-
-/* ============================================
-   RESPONSIVE MOBILE
-   ============================================ */
-
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 640px) {
+  .header-inner { padding: 0 14px; height: 70px; }
+  .brand-title   { font-size: 1.2rem; }
+  .brand-icon    { width: 40px; height: 40px; }
+  .header-tag    { display: none; }
+  .filter-nav-inner { padding: 0 14px; }
+  .filter-nav { top: 70px; }
+  
+  .filter-scroll {
+    justify-content: flex-start;
   }
 
-  /* Header titolo */
-  .container h1 {
-    font-size: 1.2rem;
-  }
-
-  /* Fase header */
-  .fase-header {
-    font-size: 0.7rem;
-    padding: 10px 14px;
-    border-radius: 8px 8px 0 0;
-  }
-
-  /* Score banner: stack verticale su mobile */
   .score-banner {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
     gap: 12px;
-    padding: 16px 20px;
+    padding: 18px 18px;
   }
+  
+  .team-block.away { align-items: center; text-align: center; }
+  .team-name  { font-size: 1.3rem; }
+  .main-goals { font-size: 2.3rem; }
 
-  .team-block {
-    width: 100%;
-  }
-
-  .team-block h2 {
-    font-size: 1.1rem;
-  }
-
-  .score-center {
-    padding: 8px 24px;
-    min-width: 100px;
-  }
-
-  .main-goals {
-    font-size: 1.8rem;
-  }
-
-  .penalty-score-banner {
-    font-size: 0.95rem;
-  }
-
-  /* Griglia giocatori: colonne affiancate ma più compatte */
   .players-grid {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
-
-  .team-column {
-    padding: 10px 8px;
-  }
-
+  
   .team-column:first-child {
     border-right: none;
-    border-bottom: 2px solid #eee;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
   }
 
-  /* Aggiungi un'intestazione colorata per distinguere le squadre */
-  .team-column:first-child::before {
-    content: "🏠 Casa";
-    display: block;
-    font-size: 0.65rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: var(--accent);
-    letter-spacing: 1px;
-    margin-bottom: 6px;
-  }
-
-  .team-column:last-child::before {
-    content: "✈️ Trasferta";
-    display: block;
-    font-size: 0.65rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: var(--accent);
-    letter-spacing: 1px;
-    margin-bottom: 6px;
-  }
-
-  /* Player row più compatto */
-  .player-row {
-    padding: 6px 6px;
-  }
-
-  .player-name {
-    font-size: 0.75rem;
-  }
-
-  .role-badge {
-    width: 18px;
-    height: 18px;
+  .tabellino-card { border-radius: var(--r-lg); }
+  .player-name    { font-size: 0.7rem; }
+  .role-badge     { width: 18px; height: 18px; font-size: 0.55rem; }
+  .final-voto     { font-size: 0.85rem; padding: 2px 6px; min-width: 38px; }
+  
+  .voto-calcolo {
+    padding-left: 26px;
     font-size: 0.55rem;
-    margin-right: 6px;
   }
+  
+  .calc-bonus-item {
+    padding: 1px 3px;
+    font-size: 0.5rem;
+  }
+}
 
-  .bonus-icons {
-    margin: 0 4px;
-    gap: 2px;
-  }
-
-  .icon {
-    width: 11px;
-    height: 11px;
-  }
-
-  .final-voto {
-    font-size: 0.85rem;
-    min-width: 26px;
-  }
-
-  .voto-container {
-    width: auto;
-  }
-
-  /* Rigori */
-  .penalty-row {
-    font-size: 0.8em;
-    padding: 5px 6px;
-  }
-
-  /* Card margin */
-  .tabellino-card {
-    margin-bottom: 24px;
-    border-radius: 8px;
-  }
+.brand-eyebrow,
+.brand-title{
+  color: var(--bg);
 }
