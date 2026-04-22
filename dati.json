@@ -269,32 +269,32 @@
           "casa": {
             "nome": "Inter",
             "giocatori": [
-              { "nome": "Martinez", "ruolo": "P", "voto": 6.0, "eventi": [] },
-              { "nome": "Akanji", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Acerbi", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Carlos Augusto", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Dumfries", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Martinez", "ruolo": "P", "voto": 6.0, "eventi": ["GS","GS"] },
+              { "nome": "Akanji", "ruolo": "D", "voto": 5.5, "eventi": [] },
+              { "nome": "Bisseck", "ruolo": "D", "voto": 6.5, "eventi": [] },
+              { "nome": "Carlos Augusto", "ruolo": "D", "voto": 5.5, "eventi": [] },
+              { "nome": "Luis Henrique", "ruolo": "C", "voto": 5.5, "eventi": [] },
               { "nome": "Barella", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Calhanoglu", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Zielinski", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Dimarco", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Thuram", "ruolo": "A", "voto": 6.0, "eventi": [] },
-              { "nome": "Bonny", "ruolo": "A", "voto": 6.0, "eventi": [] }
+              { "nome": "Calhanoglu", "ruolo": "C", "voto": 7.0, "eventi": ["G", "G", "A"] },
+              { "nome": "Sucic", "ruolo": "C", "voto": 7.0, "eventi": ["G", "A", "A"] },
+              { "nome": "Diouf", "ruolo": "C", "voto": 6.5, "eventi": [] },
+              { "nome": "Thuram", "ruolo": "A", "voto": 5.5, "eventi": [] },
+              { "nome": "Esposito", "ruolo": "A", "voto": 6.0, "eventi": [] }
             ]
           },
           "trasferta": {
             "nome": "Como",
             "giocatori": [
-              { "nome": "Butez", "ruolo": "P", "voto": 6.0, "eventi": [] },
-              { "nome": "Kempf", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Alex Valle", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Ramon", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Van Der Brempt", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Da Cunha", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Butez", "ruolo": "P", "voto": 6.5, "eventi": ["GS", "GS", "GS"] },
+              { "nome": "Kempf", "ruolo": "D", "voto": 5.5, "eventi": [] },
+              { "nome": "Alex Valle", "ruolo": "D", "voto": 5.0, "eventi": [] },
+              { "nome": "Ramon", "ruolo": "D", "voto": 5.0, "eventi": [] },
+              { "nome": "Van Der Brempt", "ruolo": "D", "voto": 6.5, "eventi": [] },
+              { "nome": "Da Cunha", "ruolo": "C", "voto": 7.0, "eventi": ["G"] },
               { "nome": "Perrone", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Nico Paz", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Assane Diao", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Baturina", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Nico Paz", "ruolo": "C", "voto": 6.5, "eventi": [] },
+              { "nome": "Perrone", "ruolo": "C", "voto": 6.0, "eventi": ["Y"] },
+              { "nome": "Baturina", "ruolo": "C", "voto": 7.0, "eventi": ["G"] },
               { "nome": "Douvikas", "ruolo": "A", "voto": 6.0, "eventi": [] }
             ]
           }
