@@ -269,7 +269,7 @@
           "casa": {
             "nome": "Inter",
             "giocatori": [
-              { "nome": "Martinez", "ruolo": "P", "voto": 6.0, "eventi": ["GS","GS"] },
+              { "nome": "Martinez", "ruolo": "P", "voto": 6.0, "eventi": ["GS", "GS"] },
               { "nome": "Akanji", "ruolo": "D", "voto": 5.5, "eventi": [] },
               { "nome": "Bisseck", "ruolo": "D", "voto": 6.5, "eventi": [] },
               { "nome": "Carlos Augusto", "ruolo": "D", "voto": 5.5, "eventi": [] },
@@ -303,33 +303,53 @@
           "casa": {
             "nome": "Atalanta",
             "giocatori": [
-              { "nome": "Carnesecchi", "ruolo": "P", "voto": 6.0, "eventi": [] },
-              { "nome": "Scalvini", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Djimsiti", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Kolasinac", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Carnesecchi", "ruolo": "P", "voto": 6.5, "eventi": ["GS"] },
+              { "nome": "Ahanor", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Djimsiti", "ruolo": "D", "voto": 5.0, "eventi": [] },
+              { "nome": "Kossounou", "ruolo": "D", "voto": 6.0, "eventi": [] },
               { "nome": "Zappacosta", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Pasalic", "ruolo": "C", "voto": 7.0, "eventi": ["G"] },
               { "nome": "Ederson", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "De Roon", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Bernasconi", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "De Ketelaere", "ruolo": "A", "voto": 6.0, "eventi": [] },
-              { "nome": "Zalewski", "ruolo": "A", "voto": 6.0, "eventi": [] },
-              { "nome": "Krstovic", "ruolo": "A", "voto": 6.0, "eventi": [] }
+              { "nome": "Bellanova", "ruolo": "C", "voto": 5.5, "eventi": [] },
+              { "nome": "De Ketelaere", "ruolo": "A", "voto": 5.5, "eventi": [] },
+              { "nome": "Raspadori", "ruolo": "A", "voto": 6.5, "eventi": [] },
+              { "nome": "Krstovic", "ruolo": "A", "voto": 6.0, "eventi": ["A"] }
+            ],
+            "panchina": [
+              { "nome": "Kolasinac", "ruolo": "D", "voto": 6.0, "eventi": ["Y"] },
+              { "nome": "Scamacca", "ruolo": "A", "voto": 6.0, "eventi": ["Y"] }
+            ],
+            "sequenza_rigori": [
+              { "nome": "Raspadori", "risultato": "segnato" },
+              { "nome": "Scamacca", "risultato": "sbagliato", "tipo": "parato" },
+              { "nome": "Zappacosta", "risultato": "sbagliato", "tipo": "parato" },
+              { "nome": "Pasalic", "risultato": "sbagliato", "tipo": "parato" },
+              { "nome": "De Ketelaere", "risultato": "sbagliato", "tipo": "parato" }
             ]
           },
           "trasferta": {
             "nome": "Lazio",
             "giocatori": [
-              { "nome": "Motta", "ruolo": "P", "voto": 6.0, "eventi": [] },
-              { "nome": "Lazzari", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Gila", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Romagnoli", "ruolo": "D", "voto": 6.0, "eventi": [] },
-              { "nome": "Nuno Tavares", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Motta", "ruolo": "P", "voto": 9.0, "eventi": ["GS"] },
+              { "nome": "Lazzari", "ruolo": "D", "voto": 6.0, "eventi": ["Y"] },
+              { "nome": "Gila", "ruolo": "D", "voto": 7.0, "eventi": [] },
+              { "nome": "Romagnoli", "ruolo": "D", "voto": 7.0, "eventi": ["G"] },
+              { "nome": "Nuno Tavares", "ruolo": "C", "voto": 5.0, "eventi": [] },
               { "nome": "Dele-Bashiru", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Cataldi", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Taylor", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Isaksen", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Maldini", "ruolo": "C", "voto": 6.0, "eventi": [] },
-              { "nome": "Zaccagni", "ruolo": "A", "voto": 6.0, "eventi": [] }
+              { "nome": "Cataldi", "ruolo": "C", "voto": 5.5, "eventi": [] },
+              { "nome": "Taylor", "ruolo": "C", "voto": 6.5, "eventi": [] },
+              { "nome": "Isaksen", "ruolo": "C", "voto": 6.5, "eventi": [] },
+              { "nome": "Noslin", "ruolo": "C", "voto": 5.5, "eventi": [] },
+              { "nome": "Zaccagni", "ruolo": "A", "voto": 6.0, "eventi": ["A"] }
+            ],
+            "panchina": [
+              { "nome": "Cancellieri", "ruolo": "A", "voto": 6.0, "eventi": ["Y"] }
+            ],
+            "sequenza_rigori": [
+              { "nome": "Nuno Tavares", "risultato": "sbagliato", "tipo": "parato" },
+              { "nome": "Cataldi", "risultato": "sbagliato", "tipo": "palo" },
+              { "nome": "Isaksen", "risultato": "segnato" },
+              { "nome": "Taylor", "risultato": "segnato" }
             ]
           }
         }
