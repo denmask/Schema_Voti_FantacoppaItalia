@@ -354,6 +354,49 @@
           }
         }
       ]
+    },
+    {
+      "nome": "Finale",
+      "partite": [
+        {
+          "casa": {
+            "nome": "Lazio",
+            "modulo": "4-3-3",
+            "giocatori": [
+              { "nome": "Motta", "ruolo": "P", "voto": null, "eventi": [] },
+              { "nome": "Marusic", "ruolo": "D", "voto": null, "eventi": [] },
+              { "nome": "Gila", "ruolo": "D", "voto": null, "eventi": [] },
+              { "nome": "Romagnoli", "ruolo": "D", "voto": null, "eventi": [] },
+              { "nome": "Tavares", "ruolo": "D", "voto": null, "eventi": [] },
+              { "nome": "Basic", "ruolo": "C", "voto": null, "eventi": [] },
+              { "nome": "Patric", "ruolo": "C", "voto": null, "eventi": [] },
+              { "nome": "Taylor", "ruolo": "C", "voto": null, "eventi": [] },
+              { "nome": "Isaksen", "ruolo": "A", "voto": null, "eventi": [] },
+              { "nome": "Noslin", "ruolo": "A", "voto": null, "eventi": [] },
+              { "nome": "Zaccagni", "ruolo": "A", "voto": null, "eventi": [] }
+            ],
+            "all": "Sarri"
+          },
+          "trasferta": {
+            "nome": "Inter",
+            "modulo": "3-5-2",
+            "giocatori": [
+              { "nome": "J. Martinez", "ruolo": "P", "voto": null, "eventi": [] },
+              { "nome": "Bisseck", "ruolo": "D", "voto": null, "eventi": [] },
+              { "nome": "Akanji", "ruolo": "D", "voto": null, "eventi": [] },
+              { "nome": "Bastoni", "ruolo": "D", "voto": null, "eventi": [] },
+              { "nome": "Dumfries", "ruolo": "C", "voto": null, "eventi": [] },
+              { "nome": "Barella", "ruolo": "C", "voto": null, "eventi": [] },
+              { "nome": "Zielinski", "ruolo": "C", "voto": null, "eventi": [] },
+              { "nome": "Sucic", "ruolo": "C", "voto": null, "eventi": [] },
+              { "nome": "Dimarco", "ruolo": "C", "voto": null, "eventi": [] },
+              { "nome": "Bonny", "ruolo": "A", "voto": null, "eventi": [] },
+              { "nome": "Lautaro Martinez", "ruolo": "A", "voto": null, "eventi": [] }
+            ],
+            "all": "Chivu"
+          }
+        }
+      ]
     }
   ]
 }
