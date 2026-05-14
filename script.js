@@ -3,7 +3,7 @@
    script.js — filter pills + render engine + voto calculation under player
    ============================================================ */
 
-const BONUS_MAP = { G: 3, A: 1, Y: -0.5, R: -1, GS: -1, MG: -2 };
+const BONUS_MAP = { G: 3, A: 1, Y: -0.5, R: -1, GS: -1, MG: -2, AG: -1 };
 
 const FASE_FLAGS = {
   "Quarti di Finale":      { flag: "⚔️",  short: "Quarti" },
@@ -20,7 +20,8 @@ const BONUS_NAMES = {
   Y: "Ammonizione",
   R: "Espulsione",
   GS: "Gol Subito",
-  MG: "Maglia Strappata"
+  MG: "Maglia Strappata",
+  AG: "Autogol"
 };
 
 const BONUS_SYMBOLS = {
@@ -29,7 +30,8 @@ const BONUS_SYMBOLS = {
   Y: "🟨",
   R: "🟥",
   GS: "🥅",
-  MG: "👕"
+  MG: "👕",
+  AG: "🔙"
 };
 
 let globalCardIdx = 0;
@@ -164,12 +166,28 @@ function calculateVotoWithDetails(giocatore) {
   };
 }
 
+function calculateTeam(squadra) {
+  let punti = 0, gol = 0, autogol = 0;
+  [...(squadra.giocatori || []), ...(squadra.panchina || [])].forEach(g => {
+    let fv = g.voto || 0;
+    (g.eventi || []).forEach(ev => {
+      fv += BONUS_MAP[ev] || 0;
+      if (ev === 'G')  gol++;
+      if (ev === 'AG') autogol++;
+    });
+    punti += fv;
+  });
+  return { punti, gol, autogol };
+}
+
 function buildCard(partita) {
   const casaRes  = calculateTeam(partita.casa);
   const trasfRes = calculateTeam(partita.trasferta);
+  const casaGol  = casaRes.gol  + trasfRes.autogol;
+  const trasfGol = trasfRes.gol + casaRes.autogol;
   const rCasa    = getPenaltyScore(partita.casa);
   const rTrasf   = getPenaltyScore(partita.trasferta);
-  const hasPens  = casaRes.gol === trasfRes.gol &&
+  const hasPens  = casaGol === trasfGol &&
                    (partita.casa.sequenza_rigori?.length || partita.trasferta.sequenza_rigori?.length);
 
   const id = `card-${globalCardIdx}`;
@@ -185,7 +203,7 @@ function buildCard(partita) {
       </div>
 
       <div class="score-center">
-        <div class="main-goals">${casaRes.gol}&thinsp;–&thinsp;${trasfRes.gol}</div>
+        <div class="main-goals">${casaGol}&thinsp;–&thinsp;${trasfGol}</div>
         ${hasPens ? `
           <div class="penalty-score-banner">${rCasa} – ${rTrasf}</div>
           <div class="dcr-label">D.C.R.</div>` : ''}
@@ -260,7 +278,6 @@ function renderPlayersWithDetails(players, container, isBench = false) {
     const row = document.createElement('div');
     row.className = `player-row${isBench ? ' bench' : ''}`;
     
-    // Main row: info giocatore a sinistra, voto finale a destra
     let mainRowHtml = `
       <div class="player-info">
         <div class="role-badge ${p.ruolo}">${p.ruolo}</div>
@@ -272,7 +289,6 @@ function renderPlayersWithDetails(players, container, isBench = false) {
     
     row.innerHTML = mainRowHtml;
     
-    // Se ci sono bonus/malus, aggiungi riga di calcolo sotto, allineata a destra
     if (dettagli.length > 0) {
       let calcHtml = `<div class="voto-calcolo">`;
       calcHtml += `<span class="calc-base">${votoBase.toFixed(1).replace('.', ',')}</span>`;
@@ -298,19 +314,6 @@ function renderPlayersWithDetails(players, container, isBench = false) {
     
     container.appendChild(row);
   });
-}
-
-function calculateTeam(squadra) {
-  let punti = 0, gol = 0;
-  [...(squadra.giocatori || []), ...(squadra.panchina || [])].forEach(g => {
-    let fv = g.voto || 0;
-    (g.eventi || []).forEach(ev => {
-      fv += BONUS_MAP[ev] || 0;
-      if (ev === 'G') gol++;
-    });
-    punti += fv;
-  });
-  return { punti, gol };
 }
 
 function getPenaltyScore(squadra) {

@@ -363,17 +363,22 @@
             "nome": "Lazio",
             "modulo": "4-3-3",
             "giocatori": [
-              { "nome": "Motta", "ruolo": "P", "voto": null, "eventi": [] },
-              { "nome": "Marusic", "ruolo": "D", "voto": null, "eventi": [] },
-              { "nome": "Gila", "ruolo": "D", "voto": null, "eventi": [] },
-              { "nome": "Romagnoli", "ruolo": "D", "voto": null, "eventi": [] },
-              { "nome": "Tavares", "ruolo": "D", "voto": null, "eventi": [] },
-              { "nome": "Basic", "ruolo": "C", "voto": null, "eventi": [] },
-              { "nome": "Patric", "ruolo": "C", "voto": null, "eventi": [] },
-              { "nome": "Taylor", "ruolo": "C", "voto": null, "eventi": [] },
-              { "nome": "Isaksen", "ruolo": "A", "voto": null, "eventi": [] },
-              { "nome": "Noslin", "ruolo": "A", "voto": null, "eventi": [] },
-              { "nome": "Zaccagni", "ruolo": "A", "voto": null, "eventi": [] }
+              { "nome": "Motta", "ruolo": "P", "voto": 6.0, "eventi": ["GS", "GS"] },
+              { "nome": "Lazzari", "ruolo": "D", "voto": 6.0, "eventi": [] },
+              { "nome": "Gila", "ruolo": "D", "voto": 6.0, "eventi": ["Y"] },
+              { "nome": "Romagnoli", "ruolo": "D", "voto": 5.5, "eventi": [] },
+              { "nome": "Tavares", "ruolo": "D", "voto": 4.0, "eventi": [] },
+              { "nome": "Basic", "ruolo": "C", "voto": 5.0, "eventi": [] },
+              { "nome": "Rovella", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Taylor", "ruolo": "C", "voto": 5.0, "eventi": [] },
+              { "nome": "Cancellieri", "ruolo": "A", "voto": 5.5, "eventi": [] },
+              { "nome": "Noslin", "ruolo": "A", "voto": 6.0, "eventi": [] },
+              { "nome": "Dia", "ruolo": "A", "voto": 5.5, "eventi": [] }
+            ],
+            "panchina": [
+              { "nome": "Zaccagni", "ruolo": "A", "voto": 6.0, "eventi": ["Y"] },
+              { "nome": "Pedro", "ruolo": "A", "voto": 6.0, "eventi": ["Y"] },
+              { "nome": "Marusic", "ruolo": "D", "voto": 6.0, "eventi": ["AG"] }
             ],
             "all": "Sarri"
           },
@@ -381,20 +386,21 @@
             "nome": "Inter",
             "modulo": "3-5-2",
             "giocatori": [
-              { "nome": "J. Martinez", "ruolo": "P", "voto": null, "eventi": [] },
-              { "nome": "Bisseck", "ruolo": "D", "voto": null, "eventi": [] },
-              { "nome": "Akanji", "ruolo": "D", "voto": null, "eventi": [] },
-              { "nome": "Bastoni", "ruolo": "D", "voto": null, "eventi": [] },
-              { "nome": "Dumfries", "ruolo": "C", "voto": null, "eventi": [] },
-              { "nome": "Barella", "ruolo": "C", "voto": null, "eventi": [] },
-              { "nome": "Zielinski", "ruolo": "C", "voto": null, "eventi": [] },
-              { "nome": "Sucic", "ruolo": "C", "voto": null, "eventi": [] },
-              { "nome": "Dimarco", "ruolo": "C", "voto": null, "eventi": [] },
-              { "nome": "Bonny", "ruolo": "A", "voto": null, "eventi": [] },
-              { "nome": "Lautaro Martinez", "ruolo": "A", "voto": null, "eventi": [] }
+              { "nome": "J. Martinez", "ruolo": "P", "voto": 7.0, "eventi": [] },
+              { "nome": "Bisseck", "ruolo": "D", "voto": 6.0, "eventi": ["Y"] },
+              { "nome": "Akanji", "ruolo": "D", "voto": 7.0, "eventi": [] },
+              { "nome": "Bastoni", "ruolo": "D", "voto": 6.0, "eventi": ["Y"] },
+              { "nome": "Dumfries", "ruolo": "C", "voto": 7.0, "eventi": ["A"] },
+              { "nome": "Barella", "ruolo": "C", "voto": 6.5, "eventi": ["Y"] },
+              { "nome": "Zielinski", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Mkhitaryan", "ruolo": "C", "voto": 6.0, "eventi": [] },
+              { "nome": "Dimarco", "ruolo": "C", "voto": 6.5, "eventi": ["Y"] },
+              { "nome": "Thuram", "ruolo": "A", "voto": 6.0, "eventi": [] },
+              { "nome": "Lautaro Martinez", "ruolo": "A", "voto": 7.0, "eventi": ["G"] }
             ],
             "all": "Chivu"
-          }
+          },
+          "risultato": "0-2"
         }
       ]
     }
